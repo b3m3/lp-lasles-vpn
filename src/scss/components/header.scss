@@ -1,0 +1,102 @@
+.header {
+	&__main {
+		padding-top: 2.8125rem;
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+	}
+
+	&__box {
+		display: flex;
+		align-items: center;
+		gap: 9.375rem;
+	}
+
+	&__navbar {
+		&_list {
+			display: flex;
+			justify-content: center;
+			gap: 2.5rem;
+		}
+	}
+
+	&__buttons {
+		display: flex;
+		align-items: center;
+		gap: 1.875rem;
+		font-weight: 500;
+
+		&_sign-in {
+			transition: transform .3s ease;
+
+			@media (any-hover: hover) {
+				&:hover {
+					transform: scale(1.1);
+				}
+			}
+		}
+
+		&_sign-up {
+			width: 9.375rem;
+		}
+	}
+}
+
+@media screen and (max-width: 1165px) {
+	.header {
+		&__box {
+			gap: calc(-200px + calc(150 - (-200)) * ((100vw - 320px) / (1165 - 320)));
+		}
+
+		&__navbar {
+			&_list {
+				gap: calc(5px + calc(40 - 5) * ((100vw - 320px) / (1125 - 320)));
+			}
+		}
+	}
+}
+
+@media screen and (max-width: 1024px) {
+	.header {
+		&__box {
+			position: fixed;
+			z-index: 2;
+			right: -100%;
+			top: 0;
+			width: 250px;
+			height: 100%;
+			flex-direction: column;
+			gap: 3.125rem;
+			box-shadow: 0 0 25px 0 var(--light-grey);
+			opacity: 0;
+			transition: .65s ease-out;
+			
+			&.active {
+				right: 0;
+				opacity: 1;
+			}
+		}
+
+		&__navbar {
+			&_list {
+				padding-top: 80px;
+				display: flex;
+				flex-direction: column;
+				align-items: flex-start;
+				justify-content: center;
+				gap: 1.25rem;
+			}
+		}
+
+		&__buttons {
+			display: flex;
+			align-items: center;
+			flex-direction: column;
+			gap: 1.25rem;
+		}
+
+		&__main {
+			padding-top: .9375rem;
+		}
+	}
+}

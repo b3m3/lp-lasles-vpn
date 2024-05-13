@@ -1,0 +1,57 @@
+.menu-hamburger {
+  position: relative;
+  z-index: 10;
+  width: 1.875rem;
+  height: 1.875rem;
+  overflow: hidden;
+
+  display: none;
+  
+  & i {
+    position: absolute;
+    display: block;
+    height: .2rem;
+    right: 0;
+    background-color: var(--red);
+    border-radius: 3px;
+    animation: identifier 1s ease;
+
+    &:nth-child(1) {
+      top: 5px;
+      width: 92%;
+      transition: .2s ease;
+    }
+    &:nth-child(2) {
+      top: 50%;
+      width: 70%;
+      transform: translateY(-50%);
+      transition: .4s ease;
+    }
+    &:nth-child(3) {
+      bottom: 5px;
+      width: 45%;
+      transition: .6s ease;
+    }
+  }
+
+  &.active {
+    & i {
+      width: 100%;
+    }
+  }
+
+  @media screen and (max-width: 1024px) {
+    display: block;
+  }
+}
+
+@keyframes identifier {
+  0% {
+    opacity: 0;
+    right: -12px;
+  }
+  100% {
+    opacity: 1;
+    right: 0;
+  }
+}
