@@ -1,4 +1,6 @@
 .header {
+	background: var(--white);
+
 	&__main {
 		padding-top: 2.8125rem;
 		display: flex;
@@ -59,6 +61,7 @@
 @media screen and (max-width: 1024px) {
 	.header {
 		&__box {
+			background: var(--white);
 			position: fixed;
 			z-index: 2;
 			right: -100%;

@@ -20,8 +20,10 @@
   --white: #fff;
   --black: #000;
   --red: #F53838;
+  --dark-grey: #0B132A;
   --grey: #4F5665;
-  --light-grey: #E5E5E5;
+  --light-grey-f: #E5E5E5;
+  --light-grey: #F8F8F8;
   --radius-50: 50px;
 }
 
@@ -37,8 +39,8 @@ body {
   font-size: 1rem;
   font-weight: 400;
   height: 100%;
-  color: var(--black);
-  background-color: var(--white);
+  color: var(--grey);
+  background-color: var(--light-grey);
 }
 
 .app {
@@ -77,9 +79,9 @@ button {
   }
 
   & p {
+    color: var(--dark-grey);
     font-weight: 500;
     font-size: 20px;
-    color: var(--grey);
 
     & b {
       font-weight: 700;
