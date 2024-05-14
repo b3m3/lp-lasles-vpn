@@ -101,41 +101,77 @@ button {
 }
 
 .btn {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  &::before {
+    pointer-events: none;
+    position: absolute;
+    content: '';
+    top: 17px;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    filter: blur(54px);
+    background: rgba(245, 56, 56, 0.35);
+    opacity: 0;
+    transition: opacity .3s ease;
+  }
+
   &_transparent {
-    position: relative;
     font-size: 1rem;
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
     height: 2.8125rem;
     border: 1px solid var(--red);
     border-radius: var(--radius-50);
     transition: .3s ease;
 
-    &::before {
-      pointer-events: none;
-      position: absolute;
-      content: '';
-      top: 17px;
-      left: 0;
-      width: 100%;
-      height: 100%;
-      filter: blur(54px);
-      background: rgba(245, 56, 56, 0.35);
-      opacity: 0;
-      transition: opacity .3s ease;
+    @media (any-hover: hover) {
+      &:hover {
+        background: var(--red) !important;
+        color: var(--white);
+      }
     }
+  }
+
+  &_background {
+    width: 15.625rem;
+    height: 3.75rem;
+    font-weight: 700;
+    line-height: 156%;
+    color: var(--white);
+    border-radius: .625rem;
+    background: var(--red);
+    transition: .3s ease;
 
     @media (any-hover: hover) {
       &:hover {
-        background: var(--red);
-        color: var(--white);
-
-        &::before {
-          opacity: 1;
-        }
+        opacity: .95;
       }
     }
+  }
+
+  @media (any-hover: hover) {
+    &:hover {
+      &::before {
+        opacity: 1;
+      }
+    }
+  }
+}
+
+.ibg {
+  position: relative;
+
+  & img {
+    position: absolute;
+    content: '';
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
   }
 }
 
@@ -143,6 +179,9 @@ button {
 
 /* header */
 @import 'components/header';
+
+/* hero */
+@import 'components/hero';
 
 /* footer */
 @import 'components/footer';

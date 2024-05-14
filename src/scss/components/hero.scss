@@ -1,0 +1,143 @@
+.hero {
+  background: var(--white);
+  overflow: hidden;
+
+  &__main {
+    padding-top: 5.5rem;
+  }
+
+  &__body {
+    display: grid;
+    grid-template: auto / minmax(auto, 34.6875rem) minmax(auto, 38.1875rem);
+  }
+
+  &__body-info {
+    padding: 1.6875rem 0 1.5625rem 0;
+
+    &_title {
+      font-weight: 500;
+      font-size: 3.125rem;
+      line-height: 140%;
+      color: var(--dark-grey);
+
+      & span {
+        font-weight: 700;
+      }
+    }
+
+    &_text {
+      line-height: 187%;
+      padding-top: 1.25rem;
+
+      & span {
+        font-weight: 500;
+      }
+    }
+
+    &_button {
+      margin-top: 3.125rem;
+    }
+  }
+
+  &__body-image {
+    margin-right: -3.9375rem;
+  }
+
+  &__bottom {
+    padding: 2.3125rem 0;
+    margin-top: 6.6875rem;
+
+    display: grid;
+    grid-template: auto / repeat(3, 1fr);
+  }
+
+  &__bottom-col {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2.25rem;
+    height: 7.8125rem;
+
+    &:not(:last-child) {
+      border-right: 2px solid #EEEFF2;
+    }
+
+    &_icon {
+      font-size: 24px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background: #FFECEC;
+      color: var(--red);
+      width: 55px;
+      height: 55px;
+      border-radius: 50%;
+    }
+
+    &_number {
+      font-weight: 700;
+      font-size: 1.5625rem;
+      line-height: 120%;
+      color: var(--dark-grey);
+    }
+
+    &_label {
+      padding-top: .3125rem;
+      font-size: 1.25rem;
+      line-height: 150%;
+    }
+  }
+}
+
+@media screen and (max-width: 1165px) {
+  .hero {
+    &__main {
+      padding-top: calc(20px + calc(80 - 20) * ((100vw - 320px) / (1165 - 320)));
+    }
+
+    &__body-info {
+      padding: 1.6875rem 0 1.5625rem 0;
+
+      &_title {
+        font-size: calc(28px + calc(50 - 28) * ((100vw - 320px) / (1165 - 320)));
+      }
+    }
+
+    &__bottom {
+      margin-top: calc(0px + calc(107 - 0) * ((100vw - 320px) / (1165 - 320)));
+    }
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .hero {
+    &__body {
+      grid-template: auto / 1fr;
+    }
+
+    &__body-info {
+      text-align: center;
+    }
+
+    &__body-image {
+      grid-row: 1 / 1;
+      height: calc(200px + calc(300 - 200) * ((100vw - 320px) / (1024 - 320)));
+      margin: 0;
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .hero {
+    &__bottom {
+      justify-content: center;
+      grid-template: auto / minmax(auto, 175px);
+      margin: 0;
+    }
+
+    &__bottom-col {
+      justify-content: start !important;
+      border: none !important;
+    }
+  }
+}
