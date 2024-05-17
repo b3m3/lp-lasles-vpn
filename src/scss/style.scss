@@ -187,6 +187,29 @@ button {
   }
 }
 
+.title-box {
+  display: grid;
+  text-align: center;
+  justify-content: center;
+  grid-template: auto / minmax(auto, 34.6875rem);
+  gap: 1.25rem;
+
+  & h2 {
+    font-weight: 500;
+    font-size: 2.1875rem;
+    line-height: 143%;
+    color: var(--dark-grey);
+
+    @media screen and (max-width: 1165px) {
+      font-size: calc(28px + calc(35 - 28) * ((100vw - 320px) / (1165 - 320)));
+    }
+  }
+
+  & p {
+    line-height: 187%;
+  }
+}
+
 /* IMPORT COMPONENTS */
 
 /* header */
@@ -197,6 +220,9 @@ button {
 
 /* features */
 @import 'components/features';
+
+/* pricing */
+@import 'components/pricing';
 
 /* footer */
 @import 'components/footer';
