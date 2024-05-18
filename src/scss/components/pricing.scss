@@ -1,5 +1,5 @@
 .pricing {
-  background: var(--light-grey-f);
+  background: var(--light-grey);
 
   &__main {
     padding-top: 5rem;
@@ -29,9 +29,6 @@
     display: grid;
     gap: 1.875rem;
     grid-template: 165px 1fr / minmax(145px, 1fr);
-
-    &_image {
-    }
 
     &_subtitle {
       text-align: center;

@@ -1,0 +1,26 @@
+.network {
+    background: var(--light-grey);
+
+		&__main {
+      padding-top: 9.3125rem;
+		}
+
+		&__image {
+      margin-top: 9.6875rem;
+      padding: 0 2.5rem;
+      height: 537px;
+		}
+}
+
+@media screen and (max-width: 1165px) {
+  .network {
+		&__main {
+      padding-top: calc(50px + calc(149 - 50) * ((100vw - 320px) / (1165 - 320)));
+		}
+
+		&__image {
+      margin-top: calc(20px + calc(155 - 20) * ((100vw - 320px) / (1165 - 320)));
+      height: calc(200px + calc(537 - 200) * ((100vw - 320px) / (1165 - 320)));
+		}
+  }
+}
