@@ -1,0 +1,41 @@
+.sponsored {
+  padding: 2.1875rem 0 3.0625rem 0;
+  
+  &__main {
+    overflow: hidden;
+    position: relative;
+    display: flex;
+    align-items: center;
+
+    &:hover .sponsored__list {
+      animation-play-state: paused;
+    }
+  }
+  
+  &__list {
+    min-height: 13rem;
+    display: flex;
+    align-items: center;
+    animation: marquee 10s linear infinite;
+    
+    &_item {
+      min-width: 14.3125rem;
+      height: 7rem;
+      
+      & img {
+        padding: 0 20px;
+        cursor: pointer;
+        object-fit: contain;
+      }
+    }
+  }
+}
+
+@keyframes marquee {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-100%);
+  }
+}
