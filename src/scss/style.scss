@@ -1,7 +1,8 @@
 /* import general */
 @import './modules/icons';
 @import './modules/fonts';
-// @import '../../node_modules/swiper/swiper.scss';
+@import '../../node_modules/swiper/swiper.scss';
+@import '../../node_modules/swiper/modules/pagination.scss';
 
 /* reset styles */
 * {
@@ -21,6 +22,7 @@
   --black: #000;
   --red: #F53838;
   --green: #2FAB73;
+  --orange: #FEA250;
   --dark-grey: #0B132A;
   --grey: #4F5665;
   --light-grey-f: #E5E5E5;
@@ -229,6 +231,9 @@ button {
 
 /* sponsored */
 @import 'components/sponsored';
+
+/* testimonials */
+@import 'components/testimonials';
 
 /* footer */
 @import 'components/footer';
