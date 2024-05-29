@@ -1,0 +1,55 @@
+.subscribe {
+  &__main {
+    position: relative;
+    padding: 3.625rem 4.375rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1.875rem;
+    background: var(--white);
+    border-radius: .625rem;
+    transform: translateY(50%);
+    
+    &::before {
+      position: absolute;
+      content: '';
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: var(--dark-grey);
+      filter: blur(114px);
+      opacity: 0.06;
+    }
+  }
+
+  &__info {
+    display: flex;
+    flex-direction: column;
+    gap: 1.25rem;
+    max-width: 23.1875rem;
+
+    &_text {
+      line-height: 187%;
+    }
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .subscribe {
+    &__main {
+      transform: translateY(0);
+      margin: 50px 0;
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .subscribe {
+    &__main {
+      padding: 1.25rem;
+      flex-direction: column;
+      text-align: center;
+    }
+  }
+}

@@ -86,6 +86,12 @@
   }
 }
 
+@media screen and (max-width: 1165px) {
+  .footer {
+    padding-top: calc(50px + calc(183 - 50) * ((100vw - 320px) / (1165 - 320)));
+  }
+}
+
 @media screen and (max-width: 1024px) {
   .footer {
     &__main {

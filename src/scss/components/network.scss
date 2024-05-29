@@ -15,12 +15,12 @@
 @media screen and (max-width: 1165px) {
   .network {
 		&__main {
-      padding-top: calc(50px + calc(149 - 50) * ((100vw - 320px) / (1165 - 320)));
+         padding-top: calc(50px + calc(149 - 50) * ((100vw - 320px) / (1165 - 320)));
 		}
 
 		&__image {
-      margin-top: calc(20px + calc(155 - 20) * ((100vw - 320px) / (1165 - 320)));
-      height: calc(200px + calc(537 - 200) * ((100vw - 320px) / (1165 - 320)));
+         margin-top: calc(20px + calc(155 - 20) * ((100vw - 320px) / (1165 - 320)));
+         height: calc(200px + calc(537 - 200) * ((100vw - 320px) / (1165 - 320)));
 		}
   }
 }
