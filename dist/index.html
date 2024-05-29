@@ -1,0 +1,622 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" href="img/favicon.svg">
+  <link rel="stylesheet" href="css/style.min.css">
+  <title>Gulp</title>
+</head>
+
+<body>
+  <div class="app" id="app">
+    <!-- header -->
+    <header class="header">
+  <div class="container">
+    <div class="header__main">
+
+      <div class="logo">
+  <img src="img/icons/logo.svg" alt="logo">
+  <p>Lasles<b>VPN</b></p>
+</div>
+
+      <div class="header__box">
+        <nav class="header__navbar">
+          <ul class="header__navbar_list">
+            <li class="header__navbar_item">
+              <a class="header__navbar_link link" href="#network">About</a>
+            </li>
+            <li class="header__navbar_item">
+              <a class="header__navbar_link link" href="#features">Features</a>
+            </li>
+            <li class="header__navbar_item">
+              <a class="header__navbar_link link" href="#pricing">Pricing</a>
+            </li>
+            <li class="header__navbar_item">
+              <a class="header__navbar_link link" href="#testimonials">Testimonials</a>
+            </li>
+            <li class="header__navbar_item">
+              <a class="header__navbar_link link" href="#footer">Help</a>
+            </li>
+          </ul>
+        </nav>
+  
+        <div class="header__buttons">
+          <a class="header__buttons_sign-in" href="#">Sign In</a>
+          <a class="header__buttons_sign-up btn btn_transparent" href="#">Sign Up</a>
+        </div>
+      </div>
+
+      <button class="menu-hamburger">
+  <i></i>
+  <i></i>
+  <i></i>
+</button>
+    </div>
+  </div>
+</header>
+
+    <!-- wrapp -->
+    <div class="app-wrapp">
+      <main class="main">
+
+        <!-- hero -->
+        <section class="hero">
+  <div class="container">
+    <div class="hero__main">
+
+      <div class="hero__body">
+        <div class="hero__body-info">
+          <h1 class="hero__body-info_title">Want anything to be easy with <span>LaslesVPN.</span></h1>
+          <p class="hero__body-info_text">Provide a network for all your needs with ease and fun using <span>LaslesVPN</span> discover interesting features from us.</p>
+          <a class="hero__body-info_button btn btn_background" href="#">Get Started</a>
+        </div>
+
+        <div class="hero__body-image ibg">
+          <img class="hero__body-image_img" src="img/hero/img_0.webp" alt="hero">
+        </div>
+      </div>
+
+      <div class="hero__bottom">
+        <div class="hero__bottom-col">
+          <div class="hero__bottom-col_icon">
+            <i class="icon-user"></i>
+          </div>
+          <div class="hero__bottom-col_box">
+            <h3 class="hero__bottom-col_number">90<span>+</span></h3>
+            <span class="hero__bottom-col_label">User</span>
+          </div>
+        </div>
+
+        <div class="hero__bottom-col">
+          <div class="hero__bottom-col_icon">
+            <i class="icon-location"></i>
+          </div>
+          <div class="hero__bottom-col_box">
+            <h3 class="hero__bottom-col_number">30<span>+</span></h3>
+            <span class="hero__bottom-col_label">Location</span>
+          </div>
+        </div>
+
+        <div class="hero__bottom-col">
+          <div class="hero__bottom-col_icon">
+            <i class="icon-server"></i>
+          </div>
+          <div class="hero__bottom-col_box">
+            <h3 class="hero__bottom-col_number">50<span>+</span></h3>
+            <span class="hero__bottom-col_label">Servers</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+        <!-- features -->
+        <section class="features">
+  <div class="container">
+    <div class="features__main" id="features">
+      <div class="features__image ibg">
+        <img src="img/features/img_0.webp" alt="features">
+      </div>
+
+      <div class="features__info">
+        <div class="features__info_top">
+          <h2 class="features__info_title subtitle">We Provide Many Features You Can Use</h2>
+          <p class="features__info_text">You can explore the features that we provide with fun and have their own functions each feature.</p>
+        </div>
+
+        <ul class="features__info_list">
+          <li class="features__info_item">
+            <i class="icon-ok"></i>
+            <p>Powerfull online protection.</p>
+          </li>
+          <li class="features__info_item">
+            <i class="icon-ok"></i>
+            <p>Internet without borders.</p>
+          </li>
+          <li class="features__info_item">
+            <i class="icon-ok"></i>
+            <p>Supercharged VPN</p>
+          </li>
+          <li class="features__info_item">
+            <i class="icon-ok"></i>
+            <p>No specific time limits.</p>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+        <!-- pricing -->
+        <div class="pricing">
+  <div class="container">
+    <div class="pricing__main">
+
+      <div class="pricing__top title-box">
+        <h2>Choose Your Plan</h2>
+        <p>Let's choose the package that is best for you and explore it happily and cheerfully.</p>
+      </div>
+
+      <div class="pricing__body" id="pricing">
+        <div class="card-pricing">
+          <div class="card-pricing__top">
+            <div class="card-pricing__top_image ibg">
+              <img src="img/pricing/img_0.webp" alt="pricing">
+            </div>
+
+            <h4 class="card-pricing__top_subtitle">Free Plan</h4>
+          </div>
+
+          <ul class="card-pricing__list">
+            <li class="card-pricing__list_item">
+              <svg width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M10.5762 17.2795C10.4449 17.2798 10.3149 17.2542 10.1935 17.204C10.0722 17.1539 9.96197 17.0804 9.86915 16.9875L5.62715 12.7445C5.53158 12.6524 5.45532 12.5421 5.40283 12.4201C5.35033 12.2981 5.32266 12.1669 5.32141 12.0342C5.32016 11.9014 5.34537 11.7697 5.39557 11.6468C5.44576 11.5238 5.51993 11.4121 5.61376 11.3182C5.70758 11.2242 5.81918 11.1499 5.94204 11.0995C6.0649 11.0491 6.19656 11.0237 6.32934 11.0248C6.46212 11.0259 6.59336 11.0534 6.7154 11.1057C6.83744 11.158 6.94784 11.2341 7.04015 11.3295L10.5752 14.8645L16.9402 8.50155C17.1277 8.31391 17.382 8.20844 17.6473 8.20834C17.9126 8.20825 18.167 8.31354 18.3547 8.50105C18.5423 8.68855 18.6478 8.94292 18.6479 9.20819C18.6479 9.47346 18.5427 9.72791 18.3552 9.91555L11.2832 16.9875C11.1903 17.0804 11.0801 17.1539 10.9588 17.204C10.8374 17.2542 10.7074 17.2798 10.5762 17.2795Z" fill="#2FAB73" />
+              </svg>
+
+              <p>Unlimited Bandwitch</p>
+            </li>
+            <li class="card-pricing__list_item">
+              <svg width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M10.5762 17.2795C10.4449 17.2798 10.3149 17.2542 10.1935 17.204C10.0722 17.1539 9.96197 17.0804 9.86915 16.9875L5.62715 12.7445C5.53158 12.6524 5.45532 12.5421 5.40283 12.4201C5.35033 12.2981 5.32266 12.1669 5.32141 12.0342C5.32016 11.9014 5.34537 11.7697 5.39557 11.6468C5.44576 11.5238 5.51993 11.4121 5.61376 11.3182C5.70758 11.2242 5.81918 11.1499 5.94204 11.0995C6.0649 11.0491 6.19656 11.0237 6.32934 11.0248C6.46212 11.0259 6.59336 11.0534 6.7154 11.1057C6.83744 11.158 6.94784 11.2341 7.04015 11.3295L10.5752 14.8645L16.9402 8.50155C17.1277 8.31391 17.382 8.20844 17.6473 8.20834C17.9126 8.20825 18.167 8.31354 18.3547 8.50105C18.5423 8.68855 18.6478 8.94292 18.6479 9.20819C18.6479 9.47346 18.5427 9.72791 18.3552 9.91555L11.2832 16.9875C11.1903 17.0804 11.0801 17.1539 10.9588 17.204C10.8374 17.2542 10.7074 17.2798 10.5762 17.2795Z" fill="#2FAB73" />
+              </svg>
+
+              <p>Encrypted Connection</p>
+            </li>
+            <li class="card-pricing__list_item">
+              <svg width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M10.5762 17.2795C10.4449 17.2798 10.3149 17.2542 10.1935 17.204C10.0722 17.1539 9.96197 17.0804 9.86915 16.9875L5.62715 12.7445C5.53158 12.6524 5.45532 12.5421 5.40283 12.4201C5.35033 12.2981 5.32266 12.1669 5.32141 12.0342C5.32016 11.9014 5.34537 11.7697 5.39557 11.6468C5.44576 11.5238 5.51993 11.4121 5.61376 11.3182C5.70758 11.2242 5.81918 11.1499 5.94204 11.0995C6.0649 11.0491 6.19656 11.0237 6.32934 11.0248C6.46212 11.0259 6.59336 11.0534 6.7154 11.1057C6.83744 11.158 6.94784 11.2341 7.04015 11.3295L10.5752 14.8645L16.9402 8.50155C17.1277 8.31391 17.382 8.20844 17.6473 8.20834C17.9126 8.20825 18.167 8.31354 18.3547 8.50105C18.5423 8.68855 18.6478 8.94292 18.6479 9.20819C18.6479 9.47346 18.5427 9.72791 18.3552 9.91555L11.2832 16.9875C11.1903 17.0804 11.0801 17.1539 10.9588 17.204C10.8374 17.2542 10.7074 17.2798 10.5762 17.2795Z" fill="#2FAB73" />
+              </svg>
+
+              <p>No Traffic Logs</p>
+            </li>
+            <li class="card-pricing__list_item">
+              <svg width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M10.5762 17.2795C10.4449 17.2798 10.3149 17.2542 10.1935 17.204C10.0722 17.1539 9.96197 17.0804 9.86915 16.9875L5.62715 12.7445C5.53158 12.6524 5.45532 12.5421 5.40283 12.4201C5.35033 12.2981 5.32266 12.1669 5.32141 12.0342C5.32016 11.9014 5.34537 11.7697 5.39557 11.6468C5.44576 11.5238 5.51993 11.4121 5.61376 11.3182C5.70758 11.2242 5.81918 11.1499 5.94204 11.0995C6.0649 11.0491 6.19656 11.0237 6.32934 11.0248C6.46212 11.0259 6.59336 11.0534 6.7154 11.1057C6.83744 11.158 6.94784 11.2341 7.04015 11.3295L10.5752 14.8645L16.9402 8.50155C17.1277 8.31391 17.382 8.20844 17.6473 8.20834C17.9126 8.20825 18.167 8.31354 18.3547 8.50105C18.5423 8.68855 18.6478 8.94292 18.6479 9.20819C18.6479 9.47346 18.5427 9.72791 18.3552 9.91555L11.2832 16.9875C11.1903 17.0804 11.0801 17.1539 10.9588 17.204C10.8374 17.2542 10.7074 17.2798 10.5762 17.2795Z" fill="#2FAB73" />
+              </svg>
+
+              <p>Works on All Devices</p>
+            </li>
+          </ul>
+
+          <div class="card-pricing__bottom">
+            <h3 class="card-pricing__bottom_subtitle"><b>Free</b></h3>
+            <a class="card-pricing__bottom_button btn btn_transparent" href="#">Select</a>
+          </div>
+        </div>
+
+        <div class="card-pricing">
+          <div class="card-pricing__top">
+            <div class="card-pricing__top_image ibg">
+              <img src="img/pricing/img_0.webp" alt="pricing">
+            </div>
+
+            <h4 class="card-pricing__top_subtitle">Standard Plan</h4>
+          </div>
+
+          <ul class="card-pricing__list">
+            <li class="card-pricing__list_item">
+              <svg width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M10.5762 17.2795C10.4449 17.2798 10.3149 17.2542 10.1935 17.204C10.0722 17.1539 9.96197 17.0804 9.86915 16.9875L5.62715 12.7445C5.53158 12.6524 5.45532 12.5421 5.40283 12.4201C5.35033 12.2981 5.32266 12.1669 5.32141 12.0342C5.32016 11.9014 5.34537 11.7697 5.39557 11.6468C5.44576 11.5238 5.51993 11.4121 5.61376 11.3182C5.70758 11.2242 5.81918 11.1499 5.94204 11.0995C6.0649 11.0491 6.19656 11.0237 6.32934 11.0248C6.46212 11.0259 6.59336 11.0534 6.7154 11.1057C6.83744 11.158 6.94784 11.2341 7.04015 11.3295L10.5752 14.8645L16.9402 8.50155C17.1277 8.31391 17.382 8.20844 17.6473 8.20834C17.9126 8.20825 18.167 8.31354 18.3547 8.50105C18.5423 8.68855 18.6478 8.94292 18.6479 9.20819C18.6479 9.47346 18.5427 9.72791 18.3552 9.91555L11.2832 16.9875C11.1903 17.0804 11.0801 17.1539 10.9588 17.204C10.8374 17.2542 10.7074 17.2798 10.5762 17.2795Z" fill="#2FAB73" />
+              </svg>
+
+              <p>Unlimited Bandwitch</p>
+            </li>
+            <li class="card-pricing__list_item">
+              <svg width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M10.5762 17.2795C10.4449 17.2798 10.3149 17.2542 10.1935 17.204C10.0722 17.1539 9.96197 17.0804 9.86915 16.9875L5.62715 12.7445C5.53158 12.6524 5.45532 12.5421 5.40283 12.4201C5.35033 12.2981 5.32266 12.1669 5.32141 12.0342C5.32016 11.9014 5.34537 11.7697 5.39557 11.6468C5.44576 11.5238 5.51993 11.4121 5.61376 11.3182C5.70758 11.2242 5.81918 11.1499 5.94204 11.0995C6.0649 11.0491 6.19656 11.0237 6.32934 11.0248C6.46212 11.0259 6.59336 11.0534 6.7154 11.1057C6.83744 11.158 6.94784 11.2341 7.04015 11.3295L10.5752 14.8645L16.9402 8.50155C17.1277 8.31391 17.382 8.20844 17.6473 8.20834C17.9126 8.20825 18.167 8.31354 18.3547 8.50105C18.5423 8.68855 18.6478 8.94292 18.6479 9.20819C18.6479 9.47346 18.5427 9.72791 18.3552 9.91555L11.2832 16.9875C11.1903 17.0804 11.0801 17.1539 10.9588 17.204C10.8374 17.2542 10.7074 17.2798 10.5762 17.2795Z" fill="#2FAB73" />
+              </svg>
+
+              <p>Encrypted Connection</p>
+            </li>
+            <li class="card-pricing__list_item">
+              <svg width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M10.5762 17.2795C10.4449 17.2798 10.3149 17.2542 10.1935 17.204C10.0722 17.1539 9.96197 17.0804 9.86915 16.9875L5.62715 12.7445C5.53158 12.6524 5.45532 12.5421 5.40283 12.4201C5.35033 12.2981 5.32266 12.1669 5.32141 12.0342C5.32016 11.9014 5.34537 11.7697 5.39557 11.6468C5.44576 11.5238 5.51993 11.4121 5.61376 11.3182C5.70758 11.2242 5.81918 11.1499 5.94204 11.0995C6.0649 11.0491 6.19656 11.0237 6.32934 11.0248C6.46212 11.0259 6.59336 11.0534 6.7154 11.1057C6.83744 11.158 6.94784 11.2341 7.04015 11.3295L10.5752 14.8645L16.9402 8.50155C17.1277 8.31391 17.382 8.20844 17.6473 8.20834C17.9126 8.20825 18.167 8.31354 18.3547 8.50105C18.5423 8.68855 18.6478 8.94292 18.6479 9.20819C18.6479 9.47346 18.5427 9.72791 18.3552 9.91555L11.2832 16.9875C11.1903 17.0804 11.0801 17.1539 10.9588 17.204C10.8374 17.2542 10.7074 17.2798 10.5762 17.2795Z" fill="#2FAB73" />
+              </svg>
+
+              <p>Yes Traffic Logs</p>
+            </li>
+            <li class="card-pricing__list_item">
+              <svg width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M10.5762 17.2795C10.4449 17.2798 10.3149 17.2542 10.1935 17.204C10.0722 17.1539 9.96197 17.0804 9.86915 16.9875L5.62715 12.7445C5.53158 12.6524 5.45532 12.5421 5.40283 12.4201C5.35033 12.2981 5.32266 12.1669 5.32141 12.0342C5.32016 11.9014 5.34537 11.7697 5.39557 11.6468C5.44576 11.5238 5.51993 11.4121 5.61376 11.3182C5.70758 11.2242 5.81918 11.1499 5.94204 11.0995C6.0649 11.0491 6.19656 11.0237 6.32934 11.0248C6.46212 11.0259 6.59336 11.0534 6.7154 11.1057C6.83744 11.158 6.94784 11.2341 7.04015 11.3295L10.5752 14.8645L16.9402 8.50155C17.1277 8.31391 17.382 8.20844 17.6473 8.20834C17.9126 8.20825 18.167 8.31354 18.3547 8.50105C18.5423 8.68855 18.6478 8.94292 18.6479 9.20819C18.6479 9.47346 18.5427 9.72791 18.3552 9.91555L11.2832 16.9875C11.1903 17.0804 11.0801 17.1539 10.9588 17.204C10.8374 17.2542 10.7074 17.2798 10.5762 17.2795Z" fill="#2FAB73" />
+              </svg>
+
+              <p>Works on All Devices</p>
+            </li>
+            <li class="card-pricing__list_item">
+              <svg width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M10.5762 17.2795C10.4449 17.2798 10.3149 17.2542 10.1935 17.204C10.0722 17.1539 9.96197 17.0804 9.86915 16.9875L5.62715 12.7445C5.53158 12.6524 5.45532 12.5421 5.40283 12.4201C5.35033 12.2981 5.32266 12.1669 5.32141 12.0342C5.32016 11.9014 5.34537 11.7697 5.39557 11.6468C5.44576 11.5238 5.51993 11.4121 5.61376 11.3182C5.70758 11.2242 5.81918 11.1499 5.94204 11.0995C6.0649 11.0491 6.19656 11.0237 6.32934 11.0248C6.46212 11.0259 6.59336 11.0534 6.7154 11.1057C6.83744 11.158 6.94784 11.2341 7.04015 11.3295L10.5752 14.8645L16.9402 8.50155C17.1277 8.31391 17.382 8.20844 17.6473 8.20834C17.9126 8.20825 18.167 8.31354 18.3547 8.50105C18.5423 8.68855 18.6478 8.94292 18.6479 9.20819C18.6479 9.47346 18.5427 9.72791 18.3552 9.91555L11.2832 16.9875C11.1903 17.0804 11.0801 17.1539 10.9588 17.204C10.8374 17.2542 10.7074 17.2798 10.5762 17.2795Z" fill="#2FAB73" />
+              </svg>
+
+              <p>Connect Anyware</p>
+            </li>
+          </ul>
+
+          <div class="card-pricing__bottom">
+            <h3 class="card-pricing__bottom_subtitle"><b>$9</b> / mo</h3>
+            <a class="card-pricing__bottom_button btn btn_transparent" href="#">Select</a>
+          </div>
+        </div>
+
+        <div class="card-pricing">
+          <div class="card-pricing__top">
+            <div class="card-pricing__top_image ibg">
+              <img src="img/pricing/img_0.webp" alt="pricing">
+            </div>
+
+            <h4 class="card-pricing__top_subtitle">Premium Plan</h4>
+          </div>
+
+          <ul class="card-pricing__list">
+            <li class="card-pricing__list_item">
+              <svg width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M10.5762 17.2795C10.4449 17.2798 10.3149 17.2542 10.1935 17.204C10.0722 17.1539 9.96197 17.0804 9.86915 16.9875L5.62715 12.7445C5.53158 12.6524 5.45532 12.5421 5.40283 12.4201C5.35033 12.2981 5.32266 12.1669 5.32141 12.0342C5.32016 11.9014 5.34537 11.7697 5.39557 11.6468C5.44576 11.5238 5.51993 11.4121 5.61376 11.3182C5.70758 11.2242 5.81918 11.1499 5.94204 11.0995C6.0649 11.0491 6.19656 11.0237 6.32934 11.0248C6.46212 11.0259 6.59336 11.0534 6.7154 11.1057C6.83744 11.158 6.94784 11.2341 7.04015 11.3295L10.5752 14.8645L16.9402 8.50155C17.1277 8.31391 17.382 8.20844 17.6473 8.20834C17.9126 8.20825 18.167 8.31354 18.3547 8.50105C18.5423 8.68855 18.6478 8.94292 18.6479 9.20819C18.6479 9.47346 18.5427 9.72791 18.3552 9.91555L11.2832 16.9875C11.1903 17.0804 11.0801 17.1539 10.9588 17.204C10.8374 17.2542 10.7074 17.2798 10.5762 17.2795Z" fill="#2FAB73" />
+              </svg>
+
+              <p>Unlimited Bandwitch</p>
+            </li>
+            <li class="card-pricing__list_item">
+              <svg width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M10.5762 17.2795C10.4449 17.2798 10.3149 17.2542 10.1935 17.204C10.0722 17.1539 9.96197 17.0804 9.86915 16.9875L5.62715 12.7445C5.53158 12.6524 5.45532 12.5421 5.40283 12.4201C5.35033 12.2981 5.32266 12.1669 5.32141 12.0342C5.32016 11.9014 5.34537 11.7697 5.39557 11.6468C5.44576 11.5238 5.51993 11.4121 5.61376 11.3182C5.70758 11.2242 5.81918 11.1499 5.94204 11.0995C6.0649 11.0491 6.19656 11.0237 6.32934 11.0248C6.46212 11.0259 6.59336 11.0534 6.7154 11.1057C6.83744 11.158 6.94784 11.2341 7.04015 11.3295L10.5752 14.8645L16.9402 8.50155C17.1277 8.31391 17.382 8.20844 17.6473 8.20834C17.9126 8.20825 18.167 8.31354 18.3547 8.50105C18.5423 8.68855 18.6478 8.94292 18.6479 9.20819C18.6479 9.47346 18.5427 9.72791 18.3552 9.91555L11.2832 16.9875C11.1903 17.0804 11.0801 17.1539 10.9588 17.204C10.8374 17.2542 10.7074 17.2798 10.5762 17.2795Z" fill="#2FAB73" />
+              </svg>
+
+              <p>Encrypted Connection</p>
+            </li>
+            <li class="card-pricing__list_item">
+              <svg width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M10.5762 17.2795C10.4449 17.2798 10.3149 17.2542 10.1935 17.204C10.0722 17.1539 9.96197 17.0804 9.86915 16.9875L5.62715 12.7445C5.53158 12.6524 5.45532 12.5421 5.40283 12.4201C5.35033 12.2981 5.32266 12.1669 5.32141 12.0342C5.32016 11.9014 5.34537 11.7697 5.39557 11.6468C5.44576 11.5238 5.51993 11.4121 5.61376 11.3182C5.70758 11.2242 5.81918 11.1499 5.94204 11.0995C6.0649 11.0491 6.19656 11.0237 6.32934 11.0248C6.46212 11.0259 6.59336 11.0534 6.7154 11.1057C6.83744 11.158 6.94784 11.2341 7.04015 11.3295L10.5752 14.8645L16.9402 8.50155C17.1277 8.31391 17.382 8.20844 17.6473 8.20834C17.9126 8.20825 18.167 8.31354 18.3547 8.50105C18.5423 8.68855 18.6478 8.94292 18.6479 9.20819C18.6479 9.47346 18.5427 9.72791 18.3552 9.91555L11.2832 16.9875C11.1903 17.0804 11.0801 17.1539 10.9588 17.204C10.8374 17.2542 10.7074 17.2798 10.5762 17.2795Z" fill="#2FAB73" />
+              </svg>
+
+              <p>Yes Traffic Logs</p>
+            </li>
+            <li class="card-pricing__list_item">
+              <svg width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M10.5762 17.2795C10.4449 17.2798 10.3149 17.2542 10.1935 17.204C10.0722 17.1539 9.96197 17.0804 9.86915 16.9875L5.62715 12.7445C5.53158 12.6524 5.45532 12.5421 5.40283 12.4201C5.35033 12.2981 5.32266 12.1669 5.32141 12.0342C5.32016 11.9014 5.34537 11.7697 5.39557 11.6468C5.44576 11.5238 5.51993 11.4121 5.61376 11.3182C5.70758 11.2242 5.81918 11.1499 5.94204 11.0995C6.0649 11.0491 6.19656 11.0237 6.32934 11.0248C6.46212 11.0259 6.59336 11.0534 6.7154 11.1057C6.83744 11.158 6.94784 11.2341 7.04015 11.3295L10.5752 14.8645L16.9402 8.50155C17.1277 8.31391 17.382 8.20844 17.6473 8.20834C17.9126 8.20825 18.167 8.31354 18.3547 8.50105C18.5423 8.68855 18.6478 8.94292 18.6479 9.20819C18.6479 9.47346 18.5427 9.72791 18.3552 9.91555L11.2832 16.9875C11.1903 17.0804 11.0801 17.1539 10.9588 17.204C10.8374 17.2542 10.7074 17.2798 10.5762 17.2795Z" fill="#2FAB73" />
+              </svg>
+
+              <p>Works on All Devices</p>
+            </li>
+            <li class="card-pricing__list_item">
+              <svg width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M10.5762 17.2795C10.4449 17.2798 10.3149 17.2542 10.1935 17.204C10.0722 17.1539 9.96197 17.0804 9.86915 16.9875L5.62715 12.7445C5.53158 12.6524 5.45532 12.5421 5.40283 12.4201C5.35033 12.2981 5.32266 12.1669 5.32141 12.0342C5.32016 11.9014 5.34537 11.7697 5.39557 11.6468C5.44576 11.5238 5.51993 11.4121 5.61376 11.3182C5.70758 11.2242 5.81918 11.1499 5.94204 11.0995C6.0649 11.0491 6.19656 11.0237 6.32934 11.0248C6.46212 11.0259 6.59336 11.0534 6.7154 11.1057C6.83744 11.158 6.94784 11.2341 7.04015 11.3295L10.5752 14.8645L16.9402 8.50155C17.1277 8.31391 17.382 8.20844 17.6473 8.20834C17.9126 8.20825 18.167 8.31354 18.3547 8.50105C18.5423 8.68855 18.6478 8.94292 18.6479 9.20819C18.6479 9.47346 18.5427 9.72791 18.3552 9.91555L11.2832 16.9875C11.1903 17.0804 11.0801 17.1539 10.9588 17.204C10.8374 17.2542 10.7074 17.2798 10.5762 17.2795Z" fill="#2FAB73" />
+              </svg>
+
+              <p>Connect Anyware</p>
+            </li>
+            <li class="card-pricing__list_item">
+              <svg width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M10.5762 17.2795C10.4449 17.2798 10.3149 17.2542 10.1935 17.204C10.0722 17.1539 9.96197 17.0804 9.86915 16.9875L5.62715 12.7445C5.53158 12.6524 5.45532 12.5421 5.40283 12.4201C5.35033 12.2981 5.32266 12.1669 5.32141 12.0342C5.32016 11.9014 5.34537 11.7697 5.39557 11.6468C5.44576 11.5238 5.51993 11.4121 5.61376 11.3182C5.70758 11.2242 5.81918 11.1499 5.94204 11.0995C6.0649 11.0491 6.19656 11.0237 6.32934 11.0248C6.46212 11.0259 6.59336 11.0534 6.7154 11.1057C6.83744 11.158 6.94784 11.2341 7.04015 11.3295L10.5752 14.8645L16.9402 8.50155C17.1277 8.31391 17.382 8.20844 17.6473 8.20834C17.9126 8.20825 18.167 8.31354 18.3547 8.50105C18.5423 8.68855 18.6478 8.94292 18.6479 9.20819C18.6479 9.47346 18.5427 9.72791 18.3552 9.91555L11.2832 16.9875C11.1903 17.0804 11.0801 17.1539 10.9588 17.204C10.8374 17.2542 10.7074 17.2798 10.5762 17.2795Z" fill="#2FAB73" />
+              </svg>
+
+              <p>Get New Features</p>
+            </li>
+          </ul>
+
+          <div class="card-pricing__bottom">
+            <h3 class="card-pricing__bottom_subtitle"><b>$12</b> / mo</h3>
+            <a class="card-pricing__bottom_button btn btn_transparent" href="#">Select</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+        <!-- network -->
+        <div class="network">
+  <div class="container">
+    <div class="network__main">
+      
+      <div class="network__top title-box" id="network">
+        <h2>Huge Global Network of Fast VPN</h2>
+        <p>See LaslesVPN everywhere to make it easier for you when you move locations.</p>
+      </div>
+
+      <div class="network__image ibg">
+        <img src="img/network/img_0.webp" alt="network">
+      </div>
+    </div>
+  </div>
+</div>
+
+        <!-- sponsored -->
+        <div class="sponsored">
+  <div class="container">
+    <div class="sponsored__main">
+      <ul class="sponsored__list">
+        <li class="sponsored__list_item ibg">
+          <img src="img/sponsored/netflix.svg" alt="netflix">
+        </li>
+  
+        <li class="sponsored__list_item ibg">
+          <img src="img/sponsored/reddit.svg" alt="reddit">
+        </li>
+  
+        <li class="sponsored__list_item ibg">
+          <img src="img/sponsored/amazon.svg" alt="amazon">
+        </li>
+  
+        <li class="sponsored__list_item ibg">
+          <img src="img/sponsored/discord.svg" alt="discord">
+        </li>
+  
+        <li class="sponsored__list_item ibg">
+          <img src="img/sponsored/spotify.svg" alt="spotify">
+        </li>
+      </ul>
+    </div>
+  </div>
+</div>
+
+        <!-- testimonials -->
+        <div class="testimonials">
+  <div class="container">
+    <div class="testimonials__main">
+
+      <div class="testimonials__title title-box">
+        <h2>Trusted by Thousands of Happy Customer</h2>
+        <p>These are the stories of our customers who have joined us with great pleasure when using this crazy feature.</p>
+      </div>
+
+      <div class="testimonials__swiper swiper" id="testimonials">
+        <div class="testimonials__swiper_wrapper swiper-wrapper">
+          <div class="testimonials__swiper_slide swiper-slide">
+            <div class="testimonials-card">
+              <div class="testimonials-card__top">
+                <div class="testimonials-card__top-left">
+                  <div class="testimonials-card__top-left_image ibg">
+                    <img src="img/testimonials/img_0.png" alt="Viezh Robert">
+                  </div>
+
+                  <div class="testimonials-card__top-left_info">
+                    <h4>Viezh Robert</h4>
+                    <span>Warsaw, Poland</span>
+                  </div>
+                </div>
+
+                <div class="testimonials-card__top-right">
+                  <p>4.5</p>
+                  <i class="icon-star"></i>
+                </div>
+              </div>
+
+              <p class="testimonials-card__text">“Wow... I am very happy to use this VPN, it turned out to be more than my expectations and so far there have been no problems. LaslesVPN always the best”.</p>
+            </div>
+          </div>
+
+          <div class="testimonials__swiper_slide swiper-slide">
+            <div class="testimonials-card">
+              <div class="testimonials-card__top">
+                <div class="testimonials-card__top-left">
+                  <div class="testimonials-card__top-left_image ibg">
+                    <img src="img/testimonials/img_1.png" alt="Yessica Christy">
+                  </div>
+
+                  <div class="testimonials-card__top-left_info">
+                    <h4>Yessica Christy</h4>
+                    <span>Shanxi, China</span>
+                  </div>
+                </div>
+
+                <div class="testimonials-card__top-right">
+                  <p>4.5</p>
+                  <i class="icon-star"></i>
+                </div>
+              </div>
+
+              <p class="testimonials-card__text">“I like it because I like to travel far and still can connect with high speed.”.</p>
+            </div>
+          </div>
+
+          <div class="testimonials__swiper_slide swiper-slide">
+            <div class="testimonials-card">
+              <div class="testimonials-card__top">
+                <div class="testimonials-card__top-left">
+                  <div class="testimonials-card__top-left_image ibg">
+                    <img src="img/testimonials/img_2.png" alt="Kim Young Jou">
+                  </div>
+
+                  <div class="testimonials-card__top-left_info">
+                    <h4>Kim Young Jou</h4>
+                    <span>Seoul, South Korea</span>
+                  </div>
+                </div>
+
+                <div class="testimonials-card__top-right">
+                  <p>4.5</p>
+                  <i class="icon-star"></i>
+                </div>
+              </div>
+
+              <p class="testimonials-card__text">“This is very unusual for my business that currently requires a virtual private network that has high security.”.</p>
+            </div>
+          </div>
+
+          <div class="testimonials__swiper_slide swiper-slide">
+            <div class="testimonials-card">
+              <div class="testimonials-card__top">
+                <div class="testimonials-card__top-left">
+                  <div class="testimonials-card__top-left_image ibg">
+                    <img src="img/testimonials/img_3.jpg " alt="Carter James">
+                  </div>
+
+                  <div class="testimonials-card__top-left_info">
+                    <h4>Carter James</h4>
+                    <span>Adelaide, Darwin</span>
+                  </div>
+                </div>
+
+                <div class="testimonials-card__top-right">
+                  <p>4.5</p>
+                  <i class="icon-star"></i>
+                </div>
+              </div>
+
+              <p class="testimonials-card__text">“I like it because I like to travel far and still can connect with high speed.”.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="testimonials__navigate">
+        <div class="testimonials__navigate_dots">
+          <div class="swiper-pagination"></div>
+        </div>
+
+        <div class="testimonials__navigate_arrows">
+          <button class="icon-left swiper-button-prev"></button>
+          <button class="icon-right swiper-button-next"></button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+        <!-- subscribe -->
+        <div class="subscribe">
+  <div class="container">
+    <div class="subscribe__main">
+      <div class="subscribe__info">
+        <h2 class="subscribe__info_subtitle subtitle">Subscribe Now for Get Special Features!</h2>
+        <p class="subscribe__info_text">Let's subscribe with us and find the fun.</p>
+      </div>
+
+      <div class="subscribe__button">
+        <a class="subscribe__button_btn btn btn_background" href="#">Subscribe Now</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+      </main>
+    </div>
+
+    <!-- footer -->
+    <footer class="footer" id="footer">
+  <div class="container">
+    <div class="footer__main">
+
+      <div class="footer__left">
+        <div class="logo">
+  <img src="img/icons/logo.svg" alt="logo">
+  <p>Lasles<b>VPN</b></p>
+</div>
+
+        <p class="footer__left_text">
+          <b>LaslesVPN</b> is a private virtual network that has unique features and has high security.
+        </p>
+
+        <ul class="footer__left_socials">
+          <li>
+            <a class="icon-facebook" href="#"></a>
+          </li>
+          <li>
+            <a class="icon-x" href="#"></a>
+          </li>
+          <li>
+            <a class="icon-mail" href="#"></a>
+          </li>
+        </ul>
+
+        <span class="footer__left_copyright">©2020LaslesVPN</span>
+      </div>
+
+      <div class="footer__right">
+        <div class="footer__right_col">
+          <h4 class="footer__right_title">Product <i class="icon-left"></i></h4>
+
+          <ul class="footer__right_list">
+            <li>
+              <a class="link" href="#">Download</a>
+            </li>
+            <li>
+              <a class="link" href="#">Pricing</a>
+            </li>
+            <li>
+              <a class="link" href="#">Locations</a>
+            </li>
+            <li>
+              <a class="link" href="#">Server</a>
+            </li>
+            <li>
+              <a class="link" href="#">Countries</a>
+            </li>
+            <li>
+              <a class="link" href="#">Blog</a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="footer__right_col">
+          <h4 class="footer__right_title">Engage <i class="icon-left"></i></h4>
+
+          <ul class="footer__right_list">
+            <li>
+              <a class="link" href="#">LaslesVPN ? </a>
+            </li>
+            <li>
+              <a class="link" href="#">FAQ</a>
+            </li>
+            <li>
+              <a class="link" href="#">Tutorials</a>
+            </li>
+            <li>
+              <a class="link" href="#">About Us</a>
+            </li>
+            <li>
+              <a class="link" href="#">Privacy Policy</a>
+            </li>
+            <li>
+              <a class="link" href="#">Terms of Service</a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="footer__right_col">
+          <h4 class="footer__right_title">Earn Money <i class="icon-left"></i></h4>
+
+          <ul class="footer__right_list">
+            <li>
+              <a class="link" href="#">Affiliate</a>
+            </li>
+            <li>
+              <a class="link" href="#">Become Partner</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</footer>
+  </div>
+  
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.0/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.0/ScrollTrigger.min.js"></script>
+  <script src="js/app.min.js"></script>
+</body>
+
+</html>

@@ -2,6 +2,7 @@ import menu from './modules/menu.js';
 import marquee from './modules/marquee.js';
 import dropDownMenu from './modules/dropDownMenu.js';
 import slider from './modules/slider.js';
+import gsp from './modules/gsp.js'
 
 document.addEventListener('DOMContentLoaded', () => {
   'use strict';
@@ -13,4 +14,5 @@ document.addEventListener('DOMContentLoaded', () => {
   // footer menu
   dropDownMenu();
   slider();
+  gsp();
 });
