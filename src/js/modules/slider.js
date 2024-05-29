@@ -1,11 +1,14 @@
 import Swiper from 'swiper';
-import { Navigation, Pagination } from 'swiper/modules';
+import { Navigation, Pagination, Autoplay } from 'swiper/modules';
 
 const slider = () => {
   const swiper = new Swiper('.swiper', {
-		modules: [Navigation, Pagination],
+		modules: [Navigation, Pagination, Autoplay],
 		loop: true,
-
+		speed: 600,
+		autoplay: {
+			delay: 3000
+		},
 		navigation: {
 			nextEl: '.swiper-button-next',
 			prevEl: '.swiper-button-prev',
